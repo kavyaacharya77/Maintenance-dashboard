@@ -22,7 +22,7 @@ const COLORS = {
   }
   
   // ── Load data then build everything ──────────────────────────────
-  fetch('data/dashboard.json')
+  fetch('dashboard.json')
     .then(res => res.json())
     .then(d => {
       buildKPIs(d);
